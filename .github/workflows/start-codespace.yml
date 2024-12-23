@@ -23,7 +23,7 @@ jobs:
      
       - name: Check Codespace Status
         run: |
-          CODESPACE_NAME="improved-computing-machine-5vvr5wg7593q5w"
+          CODESPACE_NAME="ominous-disco-w6vgx9x7vxvh7q5"
           STATUS=$(gh codespace list --json name,state | jq -r --arg name "$CODESPACE_NAME" '.[] | select(.name == $name) | .state')
 
           echo "Codespace status: $STATUS"
